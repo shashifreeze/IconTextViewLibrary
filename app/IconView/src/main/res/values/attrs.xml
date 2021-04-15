@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconTextView">
+
+
+        <!--        define font text view attributes-->
+        <attr name="icon_text" format="string" />
+        <attr name="icon_text_solid" format="boolean" />
+        <attr name="icon_text_regular" format="boolean" />
+        <attr name="icon_text_brand" format="boolean" />
+        <attr name="icon_text_padding" format="dimension" />
+        <attr name="icon_text_padding_right" format="dimension" />
+        <attr name="icon_text_padding_top" format="dimension" />
+        <attr name="icon_text_padding_bottom" format="dimension" />
+        <attr name="icon_text_padding_left" format="dimension" />
+        <attr name="icon_text_margin" format="dimension" />
+        <attr name="icon_text_margin_right" format="dimension" />
+        <attr name="icon_text_margin_top" format="dimension" />
+        <attr name="icon_text_margin_bottom" format="dimension" />
+        <attr name="icon_text_margin_left" format="dimension" />
+        <attr name="icon_text_visible" format="integer" />
+
+        <!--         define end text attributes-->
+        <attr name="end_text" format="string" />
+        <attr name="end_text_padding" format="dimension" />
+        <attr name="end_text_padding_right" format="dimension" />
+        <attr name="end_text_padding_top" format="dimension" />
+        <attr name="end_text_padding_bottom" format="dimension" />
+        <attr name="end_text_padding_left" format="dimension" />
+        <attr name="end_text_margin" format="dimension" />
+        <attr name="end_text_margin_right" format="dimension" />
+        <attr name="end_text_margin_top" format="dimension" />
+        <attr name="end_text_margin_bottom" format="dimension" />
+        <attr name="end_text_margin_left" format="dimension" />
+        <attr name="end_text_visible" format="integer" />
+
+        <!--        define start text attributes-->
+
+        <attr name="start_text" format="string" />
+        <attr name="start_text_padding" format="dimension" />
+        <attr name="start_text_padding_right" format="dimension" />
+        <attr name="start_text_padding_top" format="dimension" />
+        <attr name="start_text_padding_bottom" format="dimension" />
+        <attr name="start_text_padding_left" format="dimension" />
+        <attr name="start_text_margin" format="dimension" />
+        <attr name="start_text_margin_right" format="dimension" />
+        <attr name="start_text_margin_top" format="dimension" />
+        <attr name="start_text_margin_bottom" format="dimension" />
+        <attr name="start_text_margin_left" format="dimension" />
+        <attr name="start_text_visible" format="integer" />
+
+    </declare-styleable>
+</resources>

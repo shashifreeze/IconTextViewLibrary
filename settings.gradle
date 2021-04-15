@@ -1,0 +1,3 @@
+include ':app:IconView'
+include ':app'
+rootProject.name = "IconTextViewLibrary"

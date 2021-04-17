@@ -1,11 +1,13 @@
 package com.shashifreeze.iconview
 
 import android.content.Context
+import android.graphics.Color
 import android.util.AttributeSet
+import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import info.androidhive.fontawesome.FontTextView
-
 
 /**
 @Author: Shashi
@@ -38,13 +40,29 @@ class IconTextView(mContext: Context, attrs: AttributeSet) : LinearLayout(mConte
         fontView = findViewById<FontTextView>(R.id.fontTextView)
         //getting attributes
         val attributes = context.obtainStyledAttributes(attrs, R.styleable.IconTextView)
+
         //Setting text to fontView
-        fontView.text = attributes.getString(R.styleable.IconTextView_icon_text)
+        fontView.apply {
+            text = attributes.getString(R.styleable.IconTextView_icon_text)
+            setTextColor(attributes.getColor(R.styleable.IconTextView_icon_text_color,ContextCompat.getColor(context,R.color.black)))
+            setBackgroundColor(attributes.getColor(R.styleable.IconTextView_icon_text_bg_color, ContextCompat.getColor(context,R.color.white)))
+            visibility = attributes.getInteger(R.styleable.IconTextView_icon_text_visible, View.VISIBLE)
+        }
         //setting text to start textView
-        startTextView.text = attributes.getString(R.styleable.IconTextView_start_text)
+        startTextView.apply {
+            text = attributes.getString(R.styleable.IconTextView_start_text)
+            setTextColor(attributes.getColor(R.styleable.IconTextView_start_text_color, ContextCompat.getColor(context,R.color.black)))
+            setBackgroundColor(attributes.getColor(R.styleable.IconTextView_start_text_bg_color, ContextCompat.getColor(context,R.color.white)))
+            visibility = attributes.getInteger(R.styleable.IconTextView_start_text_visible, View.VISIBLE)
+        }
         //setting text to end textView
-        endTextView.text = attributes.getString(R.styleable.IconTextView_end_text)
-        //add attributes
+        endTextView.apply {
+            text = attributes.getString(R.styleable.IconTextView_end_text)
+            setTextColor(attributes.getColor(R.styleable.IconTextView_end_text_color, ContextCompat.getColor(context,R.color.black)))
+            setBackgroundColor(attributes.getColor(R.styleable.IconTextView_end_text_bg_color, ContextCompat.getColor(context,R.color.white)))
+            visibility = attributes.getInteger(R.styleable.IconTextView_end_text_visible, View.VISIBLE)
+        }
+
         attributes.recycle()
     }
 

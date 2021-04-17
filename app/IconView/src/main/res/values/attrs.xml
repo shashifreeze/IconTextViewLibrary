@@ -2,7 +2,6 @@
 <resources>
     <declare-styleable name="IconTextView">
 
-
         <!--        define font text view attributes-->
         <attr name="icon_text" format="string" />
         <attr name="icon_text_solid" format="boolean" />
@@ -19,6 +18,8 @@
         <attr name="icon_text_margin_bottom" format="dimension" />
         <attr name="icon_text_margin_left" format="dimension" />
         <attr name="icon_text_visible" format="integer" />
+        <attr name="icon_text_color" format="reference|color" />
+        <attr name="icon_text_bg_color" format="reference|color" />
 
         <!--         define end text attributes-->
         <attr name="end_text" format="string" />
@@ -33,7 +34,8 @@
         <attr name="end_text_margin_bottom" format="dimension" />
         <attr name="end_text_margin_left" format="dimension" />
         <attr name="end_text_visible" format="integer" />
-
+        <attr name="end_text_color" format="reference|color" />
+        <attr name="end_text_bg_color" format="reference|color" />
         <!--        define start text attributes-->
 
         <attr name="start_text" format="string" />
@@ -48,6 +50,8 @@
         <attr name="start_text_margin_bottom" format="dimension" />
         <attr name="start_text_margin_left" format="dimension" />
         <attr name="start_text_visible" format="integer" />
+        <attr name="start_text_color" format="reference|color" />
+        <attr name="start_text_bg_color" format="reference|color" />
 
     </declare-styleable>
 </resources>
